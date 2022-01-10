@@ -14,7 +14,7 @@ class Graph:
 
     def bfs(self, start, end=None):
         """
-        SOLUTION: write a method that performs a breadth first traversal and pathfinding on graph G
+        TODO: write a method that performs a breadth first traversal and pathfinding on graph G
 
         * If there's no end node, just return a list with the order of traversal
         * If there is an end node and a path exists, return a list of the shortest path
