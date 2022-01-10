@@ -23,7 +23,7 @@ The purpose of this assignment is to get you comfortable working with graph stru
 	
 	* [post 1](https://blog.dennisokeeffe.com/blog/2021-08-08-pytest-with-github-actions)
 	* [post 2](https://mattsegal.dev/pytest-on-github-actions.html)
-	* Add "! [BuildStatus] (https://github.com/<your-github-username>/Project2/workflows/Project2/badge.svg?event=push)" (update link and remove spaces) to the beginning of your readme file
+	* Add "! [BuildStatus] (https://github.com/ < your-github-username > /Project2/workflows/Project2/badge.svg?event=push)" (update link and remove spaces) to the beginning of your readme file
 	* Also refer to previous assignment for more in-depth help with GitHub actions
 
 	Ensure that the github actions complete the following:
