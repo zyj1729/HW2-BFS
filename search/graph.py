@@ -16,9 +16,9 @@ class Graph:
         """
         TODO: write a method that performs a breadth first traversal and pathfinding on graph G
 
-        * If there's no end node, just return a list with the order of traversal
-        * If there is an end node and a path exists, return a list of the shortest path
-        * If there is an end node and a path does not exist, return None
+        * If there's no end node input, return a list nodes with the order of BFS traversal
+        * If there is an end node input and a path exists, return a list of nodes with the order of the shortest path
+        * If there is an end node input and a path does not exist, return None
 
         """
         return
