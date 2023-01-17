@@ -12,7 +12,7 @@ In search/graph.py:
 	* If no end node is provided, returns a list of nodes in order of breadth-first search traversal from the given start node
 	* If an end node is provided and a path exists, returns a list of nodes in order of the shortest path to the end node
 	* If an end node is provided and a path does not exist, returns None
-* Be sure that your can handle possible edge cases, e.g.:
+* Be sure that your code can handle possible edge cases, e.g.:
 	* running bfs traversal on an empty graph
 	* running bfs traversal on an unconnected graph
 	* running bfs from a start node that does not exist in the graph
@@ -23,6 +23,7 @@ In test/test_bfs.py:
 * Write unit tests for breadth-first traversal and breadth-first search 
 * You may use the two networks provided in the data folder or create your own for testing
 * Test at least 2 possible edge cases (listed above)
+* Include a test case that fails and raises an exception
 
 
 ## Software Development Assessment
@@ -66,8 +67,9 @@ Make sure to push all your code to github, ensure that your unit tests are corre
 * Handles edge cases (1)
 
 ## Unit tests (3 points)
-* Output traversal for mini data set (1.5)
-* Unit tests for cases that work and cases that don't (1.5)
+* Output traversal for mini data set (1)
+* Tests for at least two possible edge cases (1)
+* Correctly uses exceptions (1)
 
 ## Style (1 points)
 * Readable code with clear comments and method descriptions

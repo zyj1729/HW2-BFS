@@ -3,12 +3,12 @@ import networkx as nx
 class Graph:
     """
     Class to contain a graph and your bfs function
+    
+    You may add any functions you deem necessary to the class
     """
     def __init__(self, filename: str):
         """
-        Initialization of graph object which serves as a container for 
-        methods to load data and 
-        
+        Initialization of graph object 
         """
         self.graph = nx.read_adjlist(filename, create_using=nx.DiGraph, delimiter=";")
 
