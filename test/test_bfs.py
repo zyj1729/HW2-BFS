@@ -2,7 +2,6 @@
 import pytest
 from search import graph
 
-@pytest.fixture
 def test_bfs_traversal():
     """
     TODO: Write your unit test for a breadth-first
