@@ -10,7 +10,7 @@ def test_bfs_traversal():
     that all nodes are being traversed (ie. returns 
     the right number of nodes, in the right order, etc.)
     """
-    tiny = Graph("./data/tiny_network.adjlist")
+    tiny = graph.Graph("./data/tiny_network.adjlist")
     my = tiny.bfs(list(tiny.graph)[0])
     true = list(nx.bfs_tree(tiny.graph, list(tiny.graph)[0]))
     assert len(my) == len(true), "BFS traversal length doesn't match"
@@ -29,7 +29,7 @@ def test_bfs():
     Include an additional test for nodes that are not connected 
     which should return None. 
     """
-    All = Graph("./data/citation_network.adjlist")
+    All = graph.Graph("./data/citation_network.adjlist")
     start = 'Atul Butte'
     end = 'Martin Kampmann'
     path = All.bfs(start, end)
