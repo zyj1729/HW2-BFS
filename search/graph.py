@@ -21,7 +21,34 @@ class Graph:
         * If there is an end node input and a path does not exist, return None
 
         """
-        return
+        if start not in list(self.graph):
+            raise Exception("Start node " + start + " not in graph")
+        if end and end not in list(self.graph):
+            raise Exception("End node " + end + " not in graph")
+        def trace(n, visited):
+            if n == -1:
+                return []
+            for i in visited:
+                if i[1] == n:
+                    return trace(i[0], visited) + [n]
+            return
+        Q = []
+        visited = []
+        Q.append(start)
+        visited.append((-1, start))
+        while Q:
+            v = Q.pop()
+            N = self.graph.successors(v)
+            for w in N:
+                if w not in [i[1] for i in visited]:
+                    visited.append((v, w))
+                    Q.insert(0, w)
+                if w == end:
+                    path = trace(v, visited) + [w]
+                    return path
+        if end:
+            return None
+        return [i[1] for i in visited]
 
 
 
