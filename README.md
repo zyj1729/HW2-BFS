@@ -1,4 +1,4 @@
-![BuildStatus](https://github.com/zyj1729/HW2-BFS/workflows/HW2-BFS/badge.svg?event=push)
+![BuildStatus](https://github.com/zyj1729/HW2-BFS/actions/workflows/test.yml/badge.svg?event=push)
 # Breadth-First Search (BFS) Implementation
 
 ## Overview
