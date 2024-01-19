@@ -20,7 +20,7 @@ class Graph:
         * If there is an end node input and a path exists, return a list of nodes with the order of the shortest path
         * If there is an end node input and a path does not exist, return None
 
-        """
+        """ 
         if start not in list(self.graph):
             raise Exception("Start node " + start + " not in graph")
         if end and end not in list(self.graph):
