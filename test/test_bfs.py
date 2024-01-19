@@ -1,6 +1,7 @@
 # write tests for bfs
 import pytest
 from search import graph
+import networkx as nx
 
 def test_bfs_traversal():
     """
